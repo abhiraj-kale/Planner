@@ -15,15 +15,6 @@
 
            				<p class="footer-company-name">Planner © 2020</p>
 
-           				<div class="footer-icons">
-
-           					<a href="#"><i class="facebook"><img src="./images/facebook.png" alt=""></i></a>
-           					<a href="#"><i class="instagram"><img src="./images/instagram.png" alt=""></i></a>
-           					<a href="#"><i class="twitter"><img src="./images/twitter.png" alt=""></i></a>
-           					<a href="#"><i class="github"><img src="./images/linkedin.png" alt=""></i></a>
-
-           				</div>
-
            			</div>
 
            			<div class="footer-right">

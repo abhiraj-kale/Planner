@@ -31,25 +31,9 @@
 
    	    </div>
 
-        <div class="main">
-
-          <form class="form1">
-              <input class="un " id="title" type="text" align="center" placeholder="Title">
-
-               <textarea class="un" rows="9" placeholder="Description"></textarea>
-               <div>
-            <input class="date " type="date" align="center" >
-            <input class="date " type="time" align="center" >
-          </div>
-
-            <a class="save">Save</a>
-
-
-
-          </div>
-
+        
+		 
 		</div>
-
     </div>
     <div class="bottom-div">
         <footer class="footer-distributed">
@@ -95,6 +79,5 @@
 
 		</footer>
     </div>
-
 </body>
 </html>

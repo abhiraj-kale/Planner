@@ -26,12 +26,20 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 			}else if (mysqli_num_rows($result)==1) {
 				 $row = mysqli_fetch_assoc($result);
 				 if ($password == $row['password']) {
+
+					$query="SELECT id FROM user_info WHERE username='".$_SESSION['username']."'";
+
+						if ($r = mysqli_query($conn,$query)){
+							$row = mysqli_fetch_assoc($r);
+							  $_SESSION['id'] = $row['id'];
+						}
+
 					$q = "UPDATE user_info SET status='Active' WHERE username = '$username'";
 
 					if ($conn->query($q) === TRUE) {
-						echo $_SESSION['logged_in'] = true;
-						echo $_SESSION['username']=$username;
-						header('Location: ./users/user.php');
+						 $_SESSION['logged_in'] = true;
+						 $_SESSION['username']=$username;
+						 header('Location: ./users/user.php');
 					} else {
 					 echo "<script type='text/javascript'>Couldn't Log In</script> ";
 					}

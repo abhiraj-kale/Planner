@@ -77,7 +77,7 @@ body{
  
 /*mid section containig the note button*/
 .add_note button{
-  background-color: rgb(74, 163, 185);
+  background-color: teal;
   border: none;
   color: black;
   padding: 20px;
@@ -88,6 +88,7 @@ body{
   top:180px;
   outline:none;
   box-shadow:  0 0 10px 5px rgba(0, 0, 0, 0.534);
+  cursor: pointer;
 }
 .add_note h4{
 	width: 10%;

@@ -6,15 +6,10 @@
               <a href="log_in.php" class="log_in">Log in</a>
               <a href="sign_up.php" class="sign_up">Sign Up</a>
 </div>
-<div class ="modalcontainer">
-        <h2>Incorrect Credentials</h2>
-        <p></p>
-        <div class="buttons">
-          <button>OK</button>
-	
+
 
 	<div class="loading-box">
-	</span><span><label>Loading</label></span>
+	<span><label>Loading</label></span>
         <p></p>
     </div>
     

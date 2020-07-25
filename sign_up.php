@@ -24,9 +24,15 @@ if(isset($_POST['username'])&&isset($_POST['password'])&&isset($_POST['email']))
 					//Insert into table
 					$_SESSION['account_exists'] = false;	
 					
+					
 					$sql = "INSERT INTO user_info (username, password,email) VALUES ('$username', '$password', '$email')";
 	
 					if ($conn->query($sql) === TRUE) {
+						$query="SELECT id FROM user_info WHERE username='".$_SESSION['username']."'";
+						if ($result = mysqli_query($conn,$query)){
+							$row = mysqli_fetch_assoc($result);
+							  $_SESSION['id'] = $row['id'];
+						}
 						
 						$q = "UPDATE user_info SET status='Active' WHERE username = '$username'";
 
@@ -81,7 +87,6 @@ if(isset($_POST['username'])&&isset($_POST['password'])&&isset($_POST['email']))
  </div>
 
  		   <script src="js/jquery.js"></script>
-		   <script src="js/style.js"></script>
 
 	<?php include("footer.php")?>
 

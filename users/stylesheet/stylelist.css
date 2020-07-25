@@ -1,0 +1,447 @@
+
+.complete-box{
+	display: none;
+	background-color: whitesmoke;
+	text-align: center;
+    height: 80px;
+    width: 250px;
+    font-size: 35px;
+    font-weight: lighter;
+    position: fixed;
+    z-index:99999;
+    margin-left: 37%;
+    margin-top: 5%;
+    border-radius: 5px;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.39);
+  }
+  .delete-box, .error-box{
+	display: none;
+	background-color: whitesmoke;
+	text-align: center;
+    height: 80px;
+    width: 250px;
+    font-size: 35px;
+    font-weight: lighter;
+    position: fixed;
+    z-index:99999;
+    margin-left: 37%;
+    margin-top: 5%;
+    border-radius: 5px;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.39);
+  }
+  .delete-box label , .error-box label{
+	float: center;
+	vertical-align: middle;
+    margin: 10px; 
+    padding: 5px; 
+    font-family: Arial, Helvetica, sans-serif;
+  }
+/* Form design to add note */
+.main{
+	display: none;
+	position: absolute;
+	z-index: 9999999;
+	background-color: #FFFFFF;
+	padding-top: 5%;
+	width: 50%;
+	height: 65%;
+	margin: 7em auto;
+	border-radius: 1.5em;
+	box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+	margin-left: 20%;
+	margin-top: 5%;
+	margin-right: auto;
+  }
+ 
+  .sign {
+   text-align: center;
+	color: #373737;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 25px;
+  }
+  
+  .un {
+  width: 85%;
+  color: rgb(38, 50, 56);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background: rgba(136, 126, 126, 0.04);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  margin-bottom: 50px;
+  margin-left: 46px;
+  margin-right: 46px;
+  text-align: center;
+  margin-bottom: 27px;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .date{
+	width: 37%;
+	color: rgb(38, 50, 56);
+	font-weight: 500;
+	font-size: 13px;
+	letter-spacing: 1px;
+	background: rgba(136, 126, 126, 0.04);
+	padding: 10px 20px;
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	box-sizing: border-box;
+	border: 2px solid rgba(0, 0, 0, 0.02);
+	margin-bottom: 50px;
+	margin-left: 46px;
+	text-align: center;
+	margin-bottom: 27px;
+	font-family: Arial, Helvetica, sans-serif;
+  
+  }
+  form.form1 {
+	padding-top: 40px;
+  }
+  
+  .pass {
+  width: 76%;
+  color: rgb(38, 50, 56);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background: rgba(136, 126, 126, 0.04);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  margin-bottom: 50px;
+  margin-left: 46px;
+  text-align: center;
+  margin-bottom: 27px;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  .un:focus, .pass:focus {
+	border: 2px solid rgba(0, 0, 0, 0.18);
+  
+  }
+  
+  .save , .cancel {
+	cursor: pointer;
+	border-radius: 5em;
+	color: #fff;
+	background: linear-gradient(to right, grey, darkgrey);
+	float:right;
+	border: 0;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-right: 30px;
+	font-size: 13px;
+	font-weight: 600;
+	box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+  }
+   
+  /* Form design displaying saved notes */
+  .lists{
+	float: center;
+	width: 30%;
+	color: rgb(38, 50, 56);
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 1px;
+	background: rgba(136, 126, 126, 0.04);
+	padding: 10px 20px;
+	border: 1px solid black;
+	border-radius: 20px;
+	outline: none;
+	box-sizing: border-box;
+	border: 2px solid rgba(0, 0, 0, 0.02);
+	margin-bottom: 20px;
+	margin-left: 46px;
+	margin-right: 46px;
+	text-align: center;
+	margin-bottom: 27px;
+	font-family: Arial, Helvetica, sans-serif;
+  }
+  .lists button{
+	  cursor: pointer;
+	  background: transparent;
+	  border: 0;
+	  color: rgb(38, 50, 56);
+	  outline: none;
+	  font-weight: 700;
+	  font-size: 14px;
+	  letter-spacing: 1px;
+  } 
+  .lists label{
+	  float: right;
+	  margin-right: 5px;
+	  margin-left: 5px;
+	  color: rgb(6, 189, 6);
+  }
+   .cmlist, .inlist{
+	  width: 50%;
+	  float: left;
+   }
+  .inlist div {
+	  width: 90%;
+	  float: right;
+	  clear: none;
+	  vertical-align: middle;
+
+  }
+  .cmlist div {
+	  width: 90%;
+	  float: right;
+	  clear: none;
+	  vertical-align: middle;
+  }
+  .img{
+	  cursor: pointer;
+	  float: right;
+	  margin-left: 15px;
+  }
+  #delete{
+	display: none;
+	background-color: whitesmoke;
+	text-align: center;
+    height: 120px;
+    width: 250px;
+    font-weight: lighter;
+    position: fixed;
+    z-index:99999;
+    margin-left: 37%;
+    margin-top: 5%;
+    border-radius: 5px;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.39);
+	font-family: Arial, Helvetica, sans-serif;
+  }
+  .inlist input, .cmlist input{
+	  float: right;
+  }
+  .bottom-div{
+	  width: 95%;
+	  margin-left: auto;
+	  margin-right: auto;
+	  height: 320px;
+	  background-color: rgb(45, 46, 43);
+	  box-shadow:  0 0 10px 5px rgba(0, 0, 0, 0.534);
+  }
+  
+  .footer-distributed{
+	  background: rgb(83, 83, 83);
+	  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	  box-sizing: border-box;
+	  width: 100%;
+	  font: bold 16px sans-serif;
+	  text-align: left;
+	  padding: 50px 60px 40px;
+	  overflow: hidden;
+  }
+  
+  section {
+	width: 100%;
+	display: inline-block;
+	background: #ccc;
+	height: 60vh;
+	text-align: center;
+	font-size: 22px;
+	font-weight: 700;
+	text-decoration: underline;
+  }
+  
+  
+  /* Footer left */
+  
+  .footer-distributed .footer-left{
+	  float: left;
+  }
+  
+  /* The company logo */
+  
+  .footer-distributed h3{
+	  color:  #ffffff;
+	  font: normal 36px 'Roboto', cursive;
+	  margin: 0 0 10px;
+  }
+  
+  .footer-distributed h3 span{
+	  color:  #5383d3;
+  }
+  
+  /* Footer links */
+  
+  .footer-distributed .footer-links{
+	  color:  #ffffff;
+	  margin: 0 0 10px;
+	  padding: 0;
+  }
+  
+  .footer-distributed .footer-links a{
+	  display:inline-block;
+	  line-height: 1.8;
+	  text-decoration: none;
+	  color:  inherit;
+  }
+  
+  .footer-distributed .footer-company-name{
+	  color:  #8f9296;
+	  font-size: 14px;
+	  font-weight: normal;
+	  margin: 0;
+  }
+  
+  /* Footer social icons */
+  
+  .footer-distributed .footer-icons{
+	margin-top: 40px;
+  }
+  .footer-distributed .footer-icons a{
+	  display: inline-block;
+	  width: 35px;
+	  height: 35px;
+	  cursor: pointer;
+	  background-color:  inherit;
+	  border-radius: 2px;
+	  font-size: 20px;
+	  color: #ffffff;
+	  text-align: center;
+	  line-height: 35px;
+  
+	  margin-right: 3px;
+	  margin-bottom: 5px;
+  }
+  
+  /* Footer Right */
+  
+  .footer-distributed .footer-right{
+	  float: right;
+  }
+  
+  .footer-distributed .footer-right p{
+	  display: inline-block;
+	  vertical-align: top;
+	  margin: 15px 42px 0 0;
+	  color: #ffffff;
+  }
+  
+  /* The contact form */
+  
+  .footer-distributed form{
+	  display: inline-block;
+  }
+  
+  .footer-distributed form input,
+  .footer-distributed form textarea{
+	  display: block;
+	  border-radius: 3px;
+	  box-sizing: border-box;
+	  background-color:  #1f2022;
+	  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	  border: none;
+	  resize: none;
+  
+	  font: inherit;
+	  font-size: 14px;
+	  font-weight: normal;
+	  color:  #d1d2d2;
+  
+	  width: 400px;
+	  padding: 18px;
+  }
+  
+  .footer-distributed ::-webkit-input-placeholder {
+	  color:  #5c666b;
+  }
+  
+  .footer-distributed ::-moz-placeholder {
+	  color:  #5c666b;
+	  opacity: 1;
+  }
+  
+  .footer-distributed :-ms-input-placeholder{
+	  color:  #5c666b;
+  }
+  
+  
+  .footer-distributed form input{
+	  height: 55px;
+	  margin-bottom: 15px;
+  }
+  
+  .footer-distributed form textarea{
+	  height: 100px;
+	  margin-bottom: 20px;
+  }
+  
+  .footer-distributed form button{
+	  border-radius: 3px;
+	  background-color:  #33383b;
+	  color: #ffffff;
+	  border: 0;
+	  padding: 15px 50px;
+	  font-weight: bold;
+	  float: right;
+  }
+  
+  /* If you don't want the footer to be responsive, remove these media queries */
+  
+  @media (max-width: 1000px) {
+  
+	  .footer-distributed {
+		  font: bold 14px sans-serif;
+	  }
+  
+	  .footer-distributed .footer-company-name{
+		  font-size: 12px;
+	  }
+  
+	  .footer-distributed form input,
+	  .footer-distributed form textarea{
+		  width: 250px;
+	  }
+  
+	  .footer-distributed form button{
+		  padding: 10px 35px;
+	  }
+  
+  }
+  
+  @media (max-width: 800px) {
+  
+	  .footer-distributed{
+		  padding: 30px;
+	  }
+  
+	  .footer-distributed .footer-left,
+	  .footer-distributed .footer-right{
+		  float: none;
+		  max-width: 300px;
+		  margin: 0 auto;
+	  }
+  
+	  .footer-distributed .footer-left{
+		  margin-bottom: 40px;
+	  }
+  
+	  .footer-distributed form{
+		  margin-top: 30px;
+	  }
+  
+	  .footer-distributed form{
+		  display: block;
+	  }
+  
+	  .footer-distributed form button{
+		  float: none;
+	  }
+  }

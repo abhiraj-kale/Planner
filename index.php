@@ -1,3 +1,8 @@
+<?php
+if(isset($_COOKIE['id']) && $_COOKIE['id']!='') {
+    header('Location: ./users/user.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
